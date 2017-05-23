@@ -31,10 +31,10 @@ body, a:link, a:visited, a:active{
 }
 
 .team2Dancer{
-  height:300px;
-  width:180px;
-  border-radius:10px;
-  position:absolute;
-  background-color:blue;
+  background-image:url("images/lebron.png");
+  background-repeat: no-repeat;
+}
+
+  
 
 }

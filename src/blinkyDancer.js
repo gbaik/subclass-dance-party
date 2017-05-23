@@ -9,5 +9,5 @@ makeBlinkyDancer.prototype.oldStep = makeBlinkyDancer.prototype.step;
 
 makeBlinkyDancer.prototype.step = function() {
   this.oldStep();
-  this.$node.toggle();
+ // this.$node.toggle();
 };

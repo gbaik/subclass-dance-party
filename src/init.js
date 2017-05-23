@@ -40,12 +40,14 @@ $(document).ready(function() {
     var makeTeam2 = window[dancerMakerFunctionName];
 
     // make a dancer with a random position
-
+    var heightIsh = 0;
+    var wideIsh = .9
     var team2Dancer = new makeTeam2(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
+      heightIsh,
+      Math.random() * 1000 * wideIsh,
       Math.random() * 1000
     );
+    wideIsh += .1;
     $('body').append(team2Dancer.$node);
   });
 
