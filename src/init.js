@@ -29,5 +29,28 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
   });
+
+// make team 2 button
+
+  $('.addTeam2Button').on('click', function(event) {
+
+    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+    
+    // get the maker function for the kind of dancer we're supposed to make
+    var makeTeam2 = window[dancerMakerFunctionName];
+
+    // make a dancer with a random position
+
+    var team2Dancer = new makeTeam2(
+      $("body").height() * Math.random(),
+      $("body").width() * Math.random(),
+      Math.random() * 1000
+    );
+    $('body').append(team2Dancer.$node);
+  });
+
+
+
+
 });
 
